@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/demo.css">
+    <title>Document</title>
+    <script src="./js/lib/require.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header><span class="btss">发帖</span></header>
+        <section>
+            <div class="hts"></div>
+        </section>
+    </div>
+    <script type="text/x-handlebars-template" id="scs">
+        {{#each this}}
+        <dl>
+            <dd>{{this.name}}</dd>
+            <dt>{{this.title}}</dt>
+        </dl>
+        {{/each}}
+    </script>
+    <script>
+        require(["./js/main.js"], function() {
+            require(["demo"]);
+        })
+    </script>
+</body>
+
+</html>

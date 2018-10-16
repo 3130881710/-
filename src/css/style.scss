@@ -1,0 +1,26 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    flex-shrink: 0;
+    font-size: pxTorem(10px);
+    background: skyblue;
+}
+
+section {
+    flex-grow: 1;
+    #text {
+        border: pxTorem(1px) solid #ccc;
+    }
+    #texts {
+        border: pxTorem(1px) solid #ccc;
+    }
+}
